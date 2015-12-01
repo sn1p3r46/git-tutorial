@@ -62,7 +62,7 @@ class MoviePlotGenerator {
 	}
 		
 }
-
+//this tutorial is amazing 
 $generator = new MoviePlotGenerator();
 print $generator->getPlot() . "\n"; 
 ?>
