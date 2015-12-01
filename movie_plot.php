@@ -47,7 +47,8 @@ class MoviePlotGenerator {
 		$plot .= "They fight crime.";
 		return $plot;
 	}
-	
+
+	// added some random features
 	/**
 	 *
 	 * Return a random element from the array $arr.
