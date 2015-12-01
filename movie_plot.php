@@ -1,4 +1,4 @@
-<?
+<?php
 class MoviePlotGenerator {
 	public static $adjectives = array('sadistic',
 									  'diminuitive',
@@ -42,8 +42,8 @@ class MoviePlotGenerator {
 		$her_occupation = $this->getRandom(self::$occupations);
 		$her_quirk = $this->getRandom(self::$quirks);		
 		
-		$plot  = "He's a $his_adjective $his_occupation with a $his_quirk. ";
-		$plot .= "She's a $her_adjective $her_occupation with a $her_quirk. ";
+		$plot  = "\n He's a $his_adjective $his_occupation with a $his_quirk. ";
+		$plot .= "She's a $her_adjective\n$her_occupation with a $her_quirk.";
 		$plot .= "They fight crime.";
 		return $plot;
 	}
@@ -63,4 +63,5 @@ class MoviePlotGenerator {
 }
 
 $generator = new MoviePlotGenerator();
-print $generator->getPlot() . "\n";
+print $generator->getPlot() . "\n"; 
+?>
