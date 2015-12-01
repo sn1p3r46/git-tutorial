@@ -32,6 +32,7 @@ class MoviePlotGenerator {
 	 * 
 	 * @return string
 	 */
+	//ma che cazz
 	public function getPlot()
 	{
 		$his_adjective = $this->getRandom(self::$adjectives);
